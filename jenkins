@@ -7,7 +7,7 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ajay5844/demo-merge.git']]])
             }
         }
-        stage('checkout') {
+        stage('message') {
             steps {
                 echo "this is main branch job"
             }
